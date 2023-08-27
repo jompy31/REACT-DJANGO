@@ -1,0 +1,148 @@
+.container {
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: white;
+  color: black;
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #f2f2f2;
+  border-color: #ccc;
+}
+
+.btn-danger {
+  background-color: #f4a3a3;
+  color: white;
+  border: 1px solid #d56a6a;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-danger:hover {
+  background-color: #d57070;
+  border-color: #c24949;
+}
+
+.btn-close {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-close:hover {
+  background-color: #333;
+  border-color: #222;
+  color: white;
+}
+
+.table {
+  background-color: white;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.page-info {
+  font-weight: bold;
+}
+
+.modal-dialog {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 40%;
+  transform: translate(70%, 20%);
+}
+
+.modal-content {
+  background-color: white;
+  border: none;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.form-control {
+  width: 100%;
+  border: 1px solid darkblue;
+}
+
+@media (max-width: 767px) {
+  .modal-dialog {
+    width: 100%;
+    margin: 0;
+    transform: none;
+    max-height: 80vh;
+  }
+
+  .table {
+    font-size: 12px;
+  }
+}
+
+.error-toast-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.error-toast {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  width: 300px;
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.modal-above-table {
+  z-index: 1050;
+}
+
+/* Agregado */
+.button-container {
+  display: flex;
+  align-items: center;
+}
+
+.download-button {
+  margin-left: 10px;
+}
